@@ -1,24 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta:700');
+
 html{
-  margin: 0;
-  padding: 0;
+	box-sizing: border-box;
+	font-size: 1.5rem;
 }
 
 body{
-  max-width: 60%;
-  margin: 0 auto;
-  padding: var(--padding);
-  color: var(--text-color);
-  background: #D8FBF7;
+  width: 100%;
+  margin-top: 200px;
+
+  background: #2e70af;
   font-family: monospace;
   line-height: 2;
   font-size: 21px;
+  /*background-image: linear-gradient(180deg, #5961F9 0%, #2AFADF 40%, #F9FEA5 100%);*/
+  margin-top: 170px;
+  position: relative;
 }
 
 h1{
+  position: absolute;
+  top: 0;
+  left: 0;
   font-size: 180%;
   transform: translateX(-5px);
   font-family: var(--font-display);
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 
 h1:after{
@@ -44,5 +51,196 @@ strong:before{
   display: inline-block;
 }
 
+.essay {
+	background-color: rgb(255, 255, 255);
+	padding: 50px;
+	border-radius: 1%;
+	margin-bottom: 5%;
+	margin-left: 85px;
+	-webkit-box-shadow: -5px 5px 15px -4px #000000; 
+	box-shadow: -5px 5px 15px -4px #000000;
+	width: 45%;
+	position: relative;
+}
+.logo_img {
+	width: 100px;
+	display: inline-block;
+	position: relative;
+    top: 0;
+    right: 523%;
+}
+.navbar_right{
+	background: #333;
+    padding: 10px 12px;
+    width: 19%;
+    height: 100%;
+    position: absolute;
+    left: 88%;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    border-bottom: 5px solid #333;
+}
+
+.shief {
+	transform: rotate(11deg);
+	position: absolute;
+	top: -9px;
+	left: 87%;
+	background-color: #f8f9fa;
+	width: 1.3%;
+	height: 111%;
+	position: absolute;
+	z-index: 6;
+}
+
+.headLine {
+	position: absolute;
+    top: -2%;
+    left: 3.5%;
+	margin-top: 22px;
+}
+
+.footer {
+	background-color: #333;
+	height: 100%;
+	padding-top: 120px;
+	padding-bottom: 0;
+	color: #fff;
+}
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+a {
+	margin-left: 10px;
+	text-decoration: none;
+}
+
+.foot {
+	height: 80px;
+	background-color: #43434f; bottom: 10; 
+	color: white;
+	margin-top: 110px;
+	padding-top: 20px;
+} 
+
+.foot a {
+	color: #fff;
+}
+
+.foot a:hover {
+	text-decoration: underline;
+}
+
+.hidden-xs {
+	width: 200px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+	background-color: transparent;
+	position: relative;
+	left: -12px;
+}
+
+br {
+	color: #fff;
+}
+
+legend {
+	display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    line-height: inherit;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
 
 
+
+ button {
+	position: absolute;
+	bottom: -25px;
+	 display: inline-block;
+	 cursor: pointer;
+	 outline: none;
+	 border: 0;
+	 vertical-align: middle;
+	 text-decoration: none;
+	 background: transparent;
+	 padding: 0;
+	 font-size: inherit;
+	 font-family: inherit;
+}
+ button.learn-more {
+	 width: 12rem;
+	 height: auto;
+
+}
+ button.learn-more .circle {
+	 transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	 position: relative;
+	 display: block;
+	 margin: 0;
+	 width: 3rem;
+	 height: 3rem;
+	 background: #282936;
+	 border-radius: 1.625rem;
+}
+ button.learn-more .circle .icon {
+	 transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	 position: absolute;
+	 top: 0;
+	 bottom: 0;
+	 margin: auto;
+	 background: #fff;
+}
+ button.learn-more .circle .icon.arrow {
+	 transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	 left: 0.625rem;
+	 width: 1.125rem;
+	 height: 0.125rem;
+	 background: none;
+}
+ button.learn-more .circle .icon.arrow::before {
+	 position: absolute;
+	 content: '';
+	 top: -0.25rem;
+	 right: 0.0625rem;
+	 width: 0.625rem;
+	 height: 0.625rem;
+	 border-top: 0.125rem solid #fff;
+	 border-right: 0.125rem solid #fff;
+	 transform: rotate(45deg);
+}
+ button.learn-more .button-text {
+	 transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 right: 0;
+	 bottom: 0;
+	 padding: 0.75rem 0;
+	 margin: 0 0 0 1.85rem;
+	 color: #282936;
+	 font-weight: 700;
+	 line-height: 1.6;
+	 text-align: center;
+	 text-transform: uppercase;
+}
+ button:hover .circle {
+	 width: 100%;
+}
+ button:hover .circle .icon.arrow {
+	 background: #fff;
+	 transform: translate(1rem, 0);
+}
+ button:hover .button-text {
+	 color: #fff;
+}
